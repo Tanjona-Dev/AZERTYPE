@@ -65,6 +65,8 @@
      })
  }
 
+/* Debut du Popup*/
+
  let btnOuvrir = document.querySelector(".ouvrirPopup")
 let popup = document.querySelector(".popup")
 let contenu = document.querySelector(".popup-contenu")
@@ -78,3 +80,17 @@ window.addEventListener("click", (event) => {
         popup.style.display = "none"
     }
 })
+
+let form = document.querySelector("form")
+form.addEventListener("submit",(event) =>{
+    event.preventDefault()
+   let nom = document.querySelector("#name")
+   console.log(nom.value)
+   let email = document.querySelector("#email")
+   console.log(email.value)
+   email.value = ""
+   nom.value = ""
+   popup.style.display = "none"  /*j 'ai inserE cette code pour disparaitre le popup apres le submit automatiquement*/
+})
+
+/*fin du popup*/
