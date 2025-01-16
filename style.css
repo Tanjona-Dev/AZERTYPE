@@ -1,0 +1,62 @@
+main {
+    padding: 7%;
+    text-align: center;
+    background-image: url(fondecranabstrait3dcolorycinema4despace.png);
+    background-position: center;
+    color: aliceblue;
+    font-size: large;
+}
+
+header {
+    text-align: center;
+    padding: 2%;
+    background-color: rgb(241, 228, 239);
+}
+
+footer {
+    text-align: center;
+}
+
+input[type="text"]{
+    border-radius: 9px;
+    height: 20px;
+    width: 20%;
+}
+
+.button {
+    border-radius: 5px;
+}
+
+header,
+main {
+    border-radius: 20px;
+}
+
+.popup-contenu {
+    background-color: rgb(123, 102, 173);
+    padding: 1%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    border-radius: 30px;
+    height: 25vh;
+}
+
+.popup {
+    display: none;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(241, 228, 239);
+}
+
+form input[type="text"]{
+    width: 90%;
+}
+
+input[type="email"]{
+    width: 90%;
+}
