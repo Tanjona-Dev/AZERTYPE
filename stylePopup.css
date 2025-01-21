@@ -1,0 +1,35 @@
+main{
+    z-index: -1;
+}
+
+.popup{
+    width: 97vw;
+    height: 100vh;
+    background-color: rgb(0, 128, 128, 0.2);
+    display: none;
+}
+.afficher{
+    display: block;
+}
+
+.teste{
+    display: none;
+}
+.popup-contenu{
+    z-index: 1;
+}
+
+h6{
+    display: none;
+    background-color: rgb(0, 128, 128, 0.9);
+    position: absolute;
+    left: 51%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    padding: 4%;
+    border-radius: 5px;
+    z-index: 1;
+    text-align: center;
+}
+
+

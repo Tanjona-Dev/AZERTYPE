@@ -6,10 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AZERTYPE</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="stylePopup.css">
+    <script src="main.js" defer></script>
+    <script src="validerAvecBouton.js" defer></script>
+    <script src="popup.js" defer></script>
 </head>
 
 <body>
+    
+    <h6>
+      <form action="" method="get">
+        <h2>AZERTYPE</h2>
+        <h3>Partager votre score</h3>
+        <label for="prenom">Nom :</label>
+        <input type="text" id="prenom" placeholder="Votre nom"><br><br>
+        <label for="email">Mail :</label>
+        <input type="email" id="mail" placeholder="email"><br><br>
+        <input type="submit" value="envoyer">
+      </form>
+    </h6>
     <br>
     <header>
         <P class="titre">AZERTYPE</P>
@@ -19,28 +34,15 @@
         <label for="phrases">Phrases</label>
     </header>
     <main>
+     <div class="main">
         <div class="zoneProposition">Proposition</div><br><br>
         <input class="zoneSaisie" type="text"><br><br>
-        <button class="button">VALIDER</button><br><br>
-        <div class="zoneScore">score</div><br>
+        <div class="zoneScore">Votre score</div><br>
         <div class="message">Message</div><br>
-        <button class="ouvrirPopup">Partager</button>
+        <button class="nouveauButton">Partager</button>
+    </div>
     </main>
-    <footer>
-        
-        <div class="popup">
-            <div class="popup-contenu">
-              <p>Partager votre score</p>
-                <form action="">
-                    <label for="name">Nom :</label><br>
-                    <input type="text" id="name" placeholder="Votre nom"><br><br>
-                    <label for="email">Avec qui voulez-vous partager votre score ?</label>
-                    <input type="email" id="email" placeholder="e-mail"><br><br>
-                    <button class="button">Envoyer</button>
-                </form>
-            </div>
-        </div>
-    </footer>
+
 </body>
 
 </html>
